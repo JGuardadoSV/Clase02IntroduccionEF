@@ -40,7 +40,7 @@ namespace Clase02IntroduccionEF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Alumnos");
+                    b.ToTable("Alumnos", (string)null);
                 });
 
             modelBuilder.Entity("Clase02IntroduccionEF.Compra", b =>
@@ -58,7 +58,7 @@ namespace Clase02IntroduccionEF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Compras");
+                    b.ToTable("Compras", (string)null);
                 });
 
             modelBuilder.Entity("Clase02IntroduccionEF.DetalleCompra", b =>
@@ -84,7 +84,7 @@ namespace Clase02IntroduccionEF.Migrations
 
                     b.HasIndex("CompraId");
 
-                    b.ToTable("detalleCompras");
+                    b.ToTable("detalleCompras", (string)null);
                 });
 
             modelBuilder.Entity("Clase02IntroduccionEF.Persona", b =>
@@ -106,7 +106,7 @@ namespace Clase02IntroduccionEF.Migrations
 
                     b.HasKey("PersonaId");
 
-                    b.ToTable("Persona");
+                    b.ToTable("Persona", (string)null);
                 });
 
             modelBuilder.Entity("Clase02IntroduccionEF.DetalleCompra", b =>
