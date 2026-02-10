@@ -12,6 +12,10 @@ namespace Clase02IntroduccionEF
         public DbSet<Alumno> Alumnos { get; set; }
         public DbSet<Persona> Persona { get; set; }
 
+        public DbSet<Compra> Compras { get; set; }
+        public DbSet<DetalleCompra> detalleCompras { get; set; }
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             // Usaremos un archivo local llamado "escuela.db"
